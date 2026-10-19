@@ -24,22 +24,22 @@ def notify_error(string_id):
 def main():
     if not os.access(NANDSCRIPT, os.X_OK):
         log('{} not found or not executable'.format(NANDSCRIPT), xbmc.LOGERROR)
-        notify_error(30001)
+        notify_error(30000)
         return
 
     try:
         result = subprocess.run([NANDSCRIPT], capture_output=True, text=True, timeout=30)
     except (OSError, subprocess.TimeoutExpired) as e:
         log('Failed to run {}: {}'.format(NANDSCRIPT, e), xbmc.LOGERROR)
-        notify_error(30002)
+        notify_error(30001)
         return
 
     if result.returncode != 0:
         log('{} exited with {}: {}'.format(NANDSCRIPT, result.returncode, result.stderr.strip()), xbmc.LOGERROR)
-        notify_error(30003)
+        notify_error(30001)
         return
 
     log('Boot flag set, rebooting to Android')
-    xbmcgui.Dialog().notification(NAME, ADDON.getLocalizedString(30004), ICON)
+    xbmcgui.Dialog().notification(NAME, ADDON.getLocalizedString(30002), ICON)
     xbmc.Monitor().waitForAbort(0.5)
     xbmc.executebuiltin('Reboot')

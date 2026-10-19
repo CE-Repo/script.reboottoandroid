@@ -16,18 +16,14 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#30000"
+msgid "Not available on this device"
+msgstr ""
+
 msgctxt "#30001"
-msgid "rebootfromnand not available!"
+msgid "Reboot failed"
 msgstr ""
 
 msgctxt "#30002"
-msgid "Could not run rebootfromnand!"
-msgstr ""
-
-msgctxt "#30003"
-msgid "Could not set boot flag!"
-msgstr ""
-
-msgctxt "#30004"
-msgid "Rebooting to Android..."
+msgid "Starting Android..."
 msgstr ""
