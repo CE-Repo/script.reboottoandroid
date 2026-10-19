@@ -6,7 +6,7 @@ system installed in its internal storage (eMMC/NAND).
 ## Requirements
 
 - Amlogic device running CoreELEC, with Android still installed in internal storage
-- Kodi 19 (Matrix) or newer
+- Kodi 22 (Piers) or newer
 - `/usr/sbin/rebootfromnand`, which ships with CoreELEC
 
 ## Installation
