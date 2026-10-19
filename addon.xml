@@ -14,11 +14,6 @@
     <platform>linux</platform>
     <license>MIT</license>
     <source>https://github.com/CE-Repo/script.reboottoandroid</source>
-    <news>v1.1.0
-- Confirmation dialog before rebooting
-- Only reboot if rebootfromnand succeeded, errors are logged
-- English and German translations
-- Smaller icon</news>
     <assets>
       <icon>icon.png</icon>
     </assets>
