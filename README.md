@@ -49,13 +49,17 @@ Replace `<keyboard>`/`<f12>` with the button of your remote as needed.
 Errors are written to the Kodi log (`/storage/.kodi/temp/kodi.log`) with the
 prefix `[script.reboottoandroid]`.
 
-## Releasing
+## Building the zip
 
 1. Bump `version` and update `<news>` in `addon.xml`.
-2. Tag the commit as `v<version>` (e.g. `v1.1.0`) and push the tag.
+2. Build an installable zip with the correct folder name:
 
-The release workflow builds an installable zip with the correct folder name
-and attaches it to a GitHub release.
+   ```sh
+   git archive --format=zip --prefix=script.reboottoandroid/ -o script.reboottoandroid-1.1.0.zip HEAD
+   ```
+
+   Files marked `export-ignore` in `.gitattributes` (e.g. this README) are left out.
+3. Attach the zip to a GitHub release.
 
 ## License
 
