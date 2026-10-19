@@ -27,9 +27,6 @@ def main():
         notify_error(30001)
         return
 
-    if not xbmcgui.Dialog().yesno(NAME, ADDON.getLocalizedString(30000)):
-        return
-
     try:
         result = subprocess.run([NANDSCRIPT], capture_output=True, text=True, timeout=30)
     except (OSError, subprocess.TimeoutExpired) as e:

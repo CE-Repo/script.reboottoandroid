@@ -16,10 +16,6 @@ msgstr ""
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgctxt "#30000"
-msgid "Reboot to Android now?"
-msgstr "Jetzt in Android neu starten?"
-
 msgctxt "#30001"
 msgid "rebootfromnand not available!"
 msgstr "rebootfromnand nicht verfügbar!"
